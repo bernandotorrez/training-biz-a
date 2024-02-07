@@ -21,13 +21,7 @@ get = function()
                         icon: "edit",
                         color: "primary",
                         onClick: "edit"
-                    }
-                ]
-            },
-            {
-                title: "Delete",
-                data: "MASTER_SUPPLIER.ID",
-                button: [
+                    },
                     {
                         caption: "Delete",
                         icon: "delete",
@@ -35,7 +29,7 @@ get = function()
                         onClick: "delete"
                     }
                 ]
-            }
+            },
         ],
         buttons: [],
         filter: [],
