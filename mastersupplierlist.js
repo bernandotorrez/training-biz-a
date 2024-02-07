@@ -23,6 +23,18 @@ get = function()
                         onClick: "edit"
                     }
                 ]
+            },
+            {
+                title: "Delete",
+                data: "MASTER_SUPPLIER.ID",
+                button: [
+                    {
+                        caption: "Delete",
+                        icon: "delete",
+                        color: "primary",
+                        onClick: "delete"
+                    }
+                ]
             }
         ],
         buttons: [],
@@ -30,6 +42,16 @@ get = function()
         functions : {
             edit: function(id){
                 this.router.navigate(['./form', 'mastersupplierupdateform', id])
+            },
+            delete: function(id){
+                if (confirm("Yakin mau hapus?")){
+                    this.dataService.deleteModel(id, this.apiConfig, 'MASTER_SUPPLIER').pipe(
+                        this.switchMap( ()=>this.loadData() )
+                    )
+                    .subscribe(()=>{
+                        alert('berhasil hapus data');
+                    })
+                }
             },
         }
     }
