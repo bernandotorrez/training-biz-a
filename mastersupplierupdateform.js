@@ -13,7 +13,7 @@ get = function()
                 key: "supplier_name",
                 type: "input",
                 props: {
-                    label: "Supplier Name Update",
+                    label: "Supplier Name",
                     placeholer: "Supplier Name",
                     required: true
                 },
