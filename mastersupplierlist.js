@@ -13,7 +13,7 @@ get = function()
                 type: "date"
             },
             {
-                title: "Edit",
+                title: "Action",
                 data: "MASTER_SUPPLIER.ID",
                 button: [
                     {
