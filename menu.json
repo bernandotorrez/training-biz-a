@@ -1,0 +1,27 @@
+[ 
+    { 
+        "menuName": "", 
+        "caption": "Home", 
+        "link": ["./main"], 
+        "subMenu": [] 
+    }, 
+    { 
+        "menuName": "",
+        "caption": "Master Supplier", 
+        "link": [], 
+        "subMenu": [ 
+            { 
+                "menuName": "", 
+                "caption": "Form", 
+                "link": ["./form", "mastersupplierform", null],
+                "subMenu": [] 
+            }, 
+            { 
+                "menuName": "", 
+                "caption": "List", 
+                "link": ["./list", "mastersupplierlist"], 
+                "subMenu": [] 
+            } 
+        ]
+        } 
+] 
