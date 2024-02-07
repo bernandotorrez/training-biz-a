@@ -64,7 +64,7 @@ get = function()
 
                  // Create a span element for the error message
                  var errorMessageSpan = document.createElement('span');
-                 errorMessageSpan.innerHTML = label + 'wajib di isi';
+                 errorMessageSpan.innerHTML = label + ' wajib di isi';
                  errorMessageSpan.style.color = 'red'; // Customize the style if needed
 
                  // Add a class to the span for styling purposes (optional)
